@@ -16,10 +16,7 @@ public class Controller {
 	@Autowired
 	private CustomerRepositary customerrepo;
 	
-	@GetMapping("/hi")
-	public String  hi() {
-		return "hii";
-	}
+
 	
 	@PostMapping("/register")
 	public void register(@RequestBody Customer customer) {
